@@ -1,0 +1,289 @@
+﻿<style>
+    
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Papyrus, sans-serif;
+    }
+
+    form {
+        background-color: #fff;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+  
+
+   
+    @media (max-width: 767px) {
+        form {
+            max-width: 100%;
+            padding: 10px;
+        }
+    }
+
+    
+    @media (max-width: 991px) {
+        form {
+            max-width: 90%;
+            padding: 15px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        form {
+            max-width: 80%;
+            padding: 20px;
+        }
+    }
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Papyrus, sans-serif;
+    }
+
+    
+    @media screen and (min-width: 1200px) {
+        form {
+            max-width: 1400px;
+            padding: 50px;
+        }
+
+        label {
+            font-size: 24px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #110ab0;
+            border-radius: 5px;
+            resize: vertical;
+        }
+    }
+
+ 
+    @media screen and (max-width: 1199px) {
+        form {
+            max-width: 90%;
+            padding: 30px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #110ab0;
+            border-radius: 5px;
+            resize: vertical;
+        }
+    }
+
+   
+    @media screen and (max-width: 767px) {
+        form {
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #110ab0;
+            border-radius: 5px;
+            resize: vertical;
+        }
+    }
+   
+    @media only screen and (max-width: 600px) {
+        form {
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        button[type="submit"] {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    }
+
+    
+    button[type="submit"] {
+        background-color: rgba(8, 9, 7787, 0.45669);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
+        button[type="submit"]:hover {
+            background-color: #2820dd;
+        }
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+        .logo a {
+            margin-right: 10px;
+        }
+
+  
+    @media only screen and (max-width: 600px) {
+        button[type="submit"] {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+
+        .logo {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+            .logo a {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+    }
+
+     Default styles 
+    .phone-icon {
+        background-image: url(https://cdn-icons-png.flaticon.com/512/74/74877.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .facebook-icon {
+        background-image: url(https://cdn-icons-png.flaticon.com/512/1384/1384053.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .instagram-icon {
+        background-image: url(https://cdn-icons-png.flaticon.com/512/1384/1384063.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        .phone-icon, .facebook-icon, .instagram-icon {
+            background-size: 50%;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .phone-icon, .facebook-icon, .instagram-icon {
+            width: 30px;
+            height: 30px;
+        }
+    }
+  
+    @media screen and (max-width: 576px) {
+
+        form {
+            padding: 0 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+        }
+    }
+
+    form label {
+        font-weight: bold;
+    }
+    body {
+        background-image: url("https://i.pinimg.com/736x/0c/c4/74/0cc474ce749e8803d4e776a9c8e2dd98.jpg")
+    }
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<form id="contact-form">
+
+    <br />
+    <h1 style="color:darkblue; position:center;"> לייעוץ בהודעה </h1>
+    <label for="full-name">:שם מלא</label>
+    <input type="text" id="full-name" name="full-name" required>
+
+    <label for="phone-number">:מספר טלפון</label>
+    <input type="text" id="phone-number" name="phone-number" required>
+
+    <label for="appeal-cause">:סיבת הפנייה</label>
+    <textarea id="appeal-cause" name="appeal-cause" rows="4" required></textarea>
+
+    <button type="submit">שלח הודעה</button>
+    <br />
+    <br />
+
+
+    <a href="https://www.facebook.com/people/%D7%9E%D7%A8%D7%A4%D7%90%D7%AA-%D7%A9%D7%99%D7%A0%D7%99%D7%99%D7%9D-%D7%93%D7%95%D7%A7%D7%98%D7%95%D7%A8-%D7%A8%D7%A4%D7%95%D7%A4%D7%95%D7%A8%D7%98-%D7%90%D7%9C%D7%9B%D7%A1-054-4278007/100040402766156/?locale=he_IL"><img src="facebookLogo.png" alt="Facebook logo" width="52" height="52"></a>
+    <br />
+    <a href="https://www.instagram.com/doctorrapoport/"><img src="instegramLogo.jpg" alt="Instagram logo" width="52" height="52"></a>
+    <div>
+        <a href="tel:054-4278007"><img src="PhoneCall.png" alt="phone icon" width="52" height="52"></a>
+        <h1><strong>054-4278007</strong></h1>
+    </div>
+</form>
+<br />
+<br />
+<br />
+
+<button onclick="window.location.href='index.html';" style="background-color: cyan; position: fixed; top: 10px; right: 10px; border: none; color: #000000; padding: 10px; border-radius: 50px; cursor: pointer;">בחזרה אל התפריט הראשי</button>
+
+<script>
+        $(function () {
+            $('#contact-form').submit(function (event) {
+                event.preventDefault();
+                var fullName = $('#full-name').val();
+                var phoneNumber = $('#phone-number').val();
+                var appealCause = $('#appeal-cause').val();
+                var message = 'שם מלא: ' + fullName + '\nמספר טלפון: ' + phoneNumber + '\nסיבת הפנייה: ' + appealCause;
+                var whatsappLink = 'https://api.whatsapp.com/send?phone=972544278007&text=' + encodeURIComponent(message);
+                window.open(whatsappLink, '_blank');
+
+            });
+        });
+</script>

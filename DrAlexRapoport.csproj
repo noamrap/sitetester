@@ -1,0 +1,288 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57CBEE04-F311-4510-9A6A-F777F84B6A55}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DrAlexRapoport</RootNamespace>
+    <AssemblyName>DrAlexRapoport</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44361</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Avbit.html" />
+    <Content Include="Botoxand.html" />
+    <Content Include="FAQ.css" />
+    <Content Include="FAQ.html" />
+    <Content Include="first.png" />
+    <Content Include="gallary.css" />
+    <Content Include="GoodThings.css" />
+    <Content Include="hesed.css" />
+    <Content Include="Index.css" />
+    <Content Include="logo %281%29.jpg" />
+    <Content Include="logo %282%29.jpg" />
+    <Content Include="logo.jpg" />
+    <Content Include="logo_482x800.png" />
+    <Content Include="Odot.css" />
+    <Content Include="index.html" />
+    <Content Include="BACKGROUNDFORTHEGALLARY.png" />
+    <Content Include="1.png" />
+    <Content Include="10.png" />
+    <Content Include="11.png" />
+    <Content Include="12.png" />
+    <Content Include="2.png" />
+    <Content Include="3.png" />
+    <Content Include="4.png" />
+    <Content Include="5.png" />
+    <Content Include="6.png" />
+    <Content Include="7.png" />
+    <Content Include="8.png" />
+    <Content Include="9.png" />
+    <Content Include="nocopy.jpg" />
+    <Content Include="1.jpg" />
+    <Content Include="2.jpg" />
+    <Content Include="3.jpg" />
+    <Content Include="4.jpg" />
+    <Content Include="5.jpg" />
+    <Content Include="6.jpg" />
+    <Content Include="87ניצול.png" />
+    <Content Include="almez.png" />
+    <Content Include="chicky.png" />
+    <Content Include="footballplayer.png" />
+    <Content Include="nasrin.png" />
+    <Content Include="questions.html" />
+    <Content Include="sec.png" />
+    <Content Include="theethwhite.html" />
+    <Content Include="third.png" />
+    <Content Include="whatsapp.html" />
+    <Content Include="אדם.png" />
+    <Content Include="אומן.png" />
+    <Content Include="אוריגלרר.png" />
+    <Content Include="אחלה.png" />
+    <Content Include="בל.png" />
+    <Content Include="הוקרה ראש עיר.png" />
+    <Content Include="הכיטוב.png" />
+    <Content Include="חנוך.png" />
+    <Content Include="חרדהדנטלת.png" />
+    <Content Include="טקסתפקיד.png" />
+    <Content Include="כן ירבו.png" />
+    <Content Include="כרמלה.png" />
+    <Content Include="לב כנק.png" />
+    <Content Include="לוחם.png" />
+    <Content Include="ממליץ.png" />
+    <Content Include="מריאן.png" />
+    <Content Include="מרפאהקסומה.mp4" />
+    <Content Include="מתנוססשלט.png" />
+    <Content Include="סרטוןהמרפאה.mp4" />
+    <Content Include="עיתון השקמה.png" />
+    <Content Include="עמנואל.png" />
+    <Content Include="פנייה.png" />
+    <Content Include="ציון.png" />
+    <Content Include="קשהלצאתמהבית.png" />
+    <Content Include="ריצות.png" />
+    <Content Include="שיקום-שמואל.png" />
+    <Content Include="1111.jpg" />
+    <Content Include="22.jpg" />
+    <Content Include="336176943_232020229203735_6384317917961496096_n.mp4" />
+    <Content Include="Screenshot_42.png" />
+    <Content Include="tolik.jpg" />
+    <Content Include="tolik2.jpg" />
+    <Content Include="שנון.png" />
+    <Content Include="תמונה של WhatsApp‏ 2023-03-16 בשעה 23.56.00.jpg" />
+    <Content Include="תמונה של WhatsApp‏ 2023-03-16 בשעה 23.56.43.jpg" />
+    <Content Include="תמונה של WhatsApp‏ 2023-03-16 בשעה 23.59.18.jpg" />
+    <Content Include="facebookLogo.png" />
+    <Content Include="instegramLogo.jpg" />
+    <Content Include="PhoneCall.png" />
+    <Content Include=",HEUI.png" />
+    <Content Include="A.png" />
+    <Content Include="ADAMTIKON.png" />
+    <Content Include="B.png" />
+    <Content Include="C.png" />
+    <Content Include="D.png" />
+    <Content Include="E.png" />
+    <Content Include="F.png" />
+    <Content Include="G.png" />
+    <Content Include="H.png" />
+    <Content Include="I.png" />
+    <Content Include="J.png" />
+    <Content Include="K.png" />
+    <Content Include="L.png" />
+    <Content Include="M.png" />
+    <Content Include="N.png" />
+    <Content Include="nobel.png" />
+    <Content Include="O.png" />
+    <Content Include="Screenshot_30.png" />
+    <Content Include="Screenshot_31.png" />
+    <Content Include="Screenshot_41.png" />
+    <Content Include="table.png" />
+    <Content Include="tableeee.png" />
+    <Content Include="upscaler-Screenshot_31-2x.jpg" />
+    <Content Include="upscaler-לוגומרפאה-2x.jpg" />
+    <Content Include="אבאאא.mp4" />
+    <Content Include="אלכסמטפלסתםתמונה.png" />
+    <Content Include="אלכסעםהמרפאה.jpg" />
+    <Content Include="אלצקו.png" />
+    <Content Include="זוהר.png" />
+    <Content Include="ט.png" />
+    <Content Include="יוםעצמאות.png" />
+    <Content Include="לוגומרפאה.png" />
+    <Content Include="455555555.png" />
+    <Content Include="אבאפגום.png" />
+    <Content Include="אחתהביאה.png" />
+    <Content Include="בן13.png" />
+    <Content Include="גיי.png" />
+    <Content Include="דוד.png" />
+    <Content Include="דתייהשורדשואה.png" />
+    <Content Include="זהלאפוטושופ.png" />
+    <Content Include="טובה.png" />
+    <Content Include="כת.png" />
+    <Content Include="homepage_banner %281%29.jpg" />
+    <Content Include="Hotpot %281%29.png" />
+    <Content Include="Screenshot_33.png" />
+    <Content Include="Screenshot_34.png" />
+    <Content Include="Screenshot_35.png" />
+    <Content Include="Screenshot_36.png" />
+    <Content Include="Screenshot_37.png" />
+    <Content Include="Screenshot_38.png" />
+    <Content Include="Screenshot_39.png" />
+    <Content Include="Screenshot_40.png" />
+    <Content Include="Screenshot_43.png" />
+    <Content Include="Screenshot_44.png" />
+    <Content Include="Screenshot_45.png" />
+    <Content Include="Screenshot_46666.png" />
+    <Content Include="Screenshot_4777.png" />
+    <Content Include="א.png" />
+    <Content Include="ב.png" />
+    <Content Include="ג.png" />
+    <Content Include="ד.png" />
+    <Content Include="ה.png" />
+    <Content Include="ז.png" />
+    <Content Include="ח.png" />
+    <Content Include="תמונה של WhatsApp‏ 2023-03-17 בשעה 23.42.39.jpg" />
+    <Content Include="תמונתו.png" />
+    <Content Include="JavaScript.js" />
+    <Content Include="Celeb.js" />
+    <Content Include="goodThings.js" />
+    <Content Include="NETINA.html" />
+    <Content Include="BeforeAndAfter.html" />
+    <Content Include="celebAndGoodThings.html" />
+    <Content Include="Contact.html" />
+    <Content Include="GallaryClinic.html" />
+    <Content Include="Odot.html" />
+    <Content Include="pleaseworkkkkk.png" />
+    <Content Include="Reccomends.html" />
+    <Content Include="StyleSheet.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Css\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51941</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44361/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

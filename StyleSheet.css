@@ -1,0 +1,245 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #353836;
+    color: cornflowerblue;
+    font-family: "Poppins", sans-serif;
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: src("Images/לתמונות/Screenshot_45.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+main {
+    flex: 1;
+}
+@media (max-width: 767px) {
+    body {
+        background-size: contain;
+        background-position: center center;
+    }
+}
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 20px;
+    background-color: #1b5d7e;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+
+    #brand a {
+        color: #4f09c3;
+    }
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    ul a {
+        color: #5b49fb;
+        position: relative;
+        text-decoration: none;
+    }
+
+        ul a::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #2885d4;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        ul a:hover::before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+    ul li {
+        padding: 5px;
+        margin-left: 10px;
+    }
+
+        ul li:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+#login,
+#signup {
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+#login {
+    border: 1px solid #14f549;
+}
+
+#signup {
+    border: 1px solid #ff0000;
+}
+
+    #signup a {
+        color: whitesmoke;
+    }
+
+#login a {
+    color: whitesmoke;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+    #hamburger-icon div {
+        width: 35px;
+        height: 7px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+.mobile-menu-icon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 9999;
+}
+
+.mobile-menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 90%;
+    background-color: #D8B2B5;
+    border: 1px solid black;
+    z-index: 9998;
+}
+
+.mobile-menu li {
+  margin-bottom: 11px;
+}
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banorrrr h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .banorrrr p {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .content {
+        padding: 3rem 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .banorrrr h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .banorrrr p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .content {
+        padding: 2rem 0;
+    }
+
+}
+
+
+h1 {
+    transition: transform 0.2s ease-in-out;
+}
+
+    h1:hover {
+        transform: scale(1.1);
+    }
+

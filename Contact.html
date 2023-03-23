@@ -1,0 +1,544 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.6.3/foundation.min.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="image">
+            <img src="https://scontent.ftlv19-1.fna.fbcdn.net/v/t39.30808-6/336537028_749530803330832_918330543328642623_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Mpv8GOe9rDsAX8jsIY8&_nc_ht=scontent.ftlv19-1.fna&oh=00_AfBo9npL2lX-k7GBe1GQV22J4FMwzF5A84tz-HsnVx1LYA&oe=641BAE6C">
+
+
+        </div>
+
+
+
+        <div class="content">
+       
+            <h3>אודות הרופא</h3>
+
+
+            <span></span>
+            <p>
+
+                שמי הוא אלכס רפופורט, נולדתי בשנת 1977, גדלתי בראשון לציון והיום אני אבא לארבעה ילדים מקסימים: נועם, יעל, סיון ודניאל
+
+                אני בוגר אוניברסיטת תל-אביב<br>
+                בפקולטה לרפואת שיניים 2006<br>
+                ועובד עם כל חברות הביטוח
+            </p>
+            <p>
+                תחומי ההתמחות העיקריים במרפאתי  - אסתטיקה, כירורגיה, טיפולי שורש, שיקום הפה, שתלים ושיקום על גבי שתלים, ציפויי שיניים (למינייט) ושיפור החיוך, הסרת אבנית והלבנת שיניים<br>
+                במרפאה תוכלו לקבל שירותי עזרה ראשונה 24 שעות
+            </p>
+            <p>
+                טיפולי בוטוקס וחומצה היאלרונית על ידי רופא מוסמך<br>
+                מקצועיות, יחס אישי, הגינות ויושרה<br>
+                את ההבדל כבר תרגישו בעצמכם<br>
+                <span style="font-size: 1em;">🦷🦷🦷🦷🦷🦷🦷🦷🦷</span>
+            </p>
+
+
+        </div>
+
+    </section>
+    <style>
+      
+        .section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .image img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .content {
+            font-size: 3em;
+            text-align: center;
+        }
+
+        section {
+            width: 20%;
+        }
+
+      
+        @media (max-width: 768px) {
+            .section {
+                grid-template-columns: 1fr;
+                width: 90%;
+            }
+
+            section {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section {
+                grid-template-columns: 1fr;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .image {
+                text-align: center;
+            }
+
+            section {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .content {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            display: grid;
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            align-content: center;
+            min-height: 100vh;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 70vh;
+            width: 75vw;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 12px;
+        }
+
+        .image {
+            background-color: #12192c;
+            display: flex;
+            border-radius: 15px 0 0 12px;
+        }
+
+            .image img {
+                height: 50vh;
+                margin: 50px auto;
+            }
+
+        .content {
+            background-color: #12192c;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 0 12px 12px 0;
+            color: #fff;
+        }
+
+            .content h2 {
+                text-transform: uppercase;
+                font-size: 56px;
+                letter-spacing: 6px;
+                opacity: 0.9;
+            }
+
+            .content span {
+                height: 0.5px;
+                width: 80px;
+                background: #777;
+                margin: 30px 0;
+            }
+
+            .content p {
+                padding-bottom: 15px;
+                font-weight: 400;
+                opacity: 0.7;
+                width: 60%;
+                text-align: center;
+                margin: 0 auto;
+                line-height: 1.7;
+                color: #ffffff;
+            }
+
+        .links {
+            margin: 15px 0;
+        }
+
+        @media (max-width: 480px) {
+            section {
+                grid-template-columns: 1fr;
+                width: 90%;
+            }
+
+            .image img {
+                height: auto;
+                max-width: 100%;
+            }
+
+            .content h2 {
+                font-size: 36px;
+                letter-spacing: 3px;
+            }
+
+            .content span {
+                width: 50px;
+                margin: 20px 0;
+            }
+
+            .content p {
+                width: 80%;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        }
+
+
+
+        .icons li {
+            display: block;
+            padding: 5px;
+            margin: 5px;
+        }
+
+            .icons li i {
+                font-size: 26px;
+                opacity: 0.8;
+            }
+
+                .icons li i:hover {
+                    color: #C850C0;
+                    cursor: pointer;
+                }
+
+
+        /*****************/
+        @media screen and (max-width: 900px) {
+            section {
+                grid-template-columns: 1fr;
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .image {
+                height: 50vh;
+                border-radius: 0;
+            }
+
+            .content {
+                height: auto; 
+                border-radius: 0;
+                padding: 30px; 
+                text-align: center; 
+            }
+
+                .content h2 {
+                    font-size: 24px; 
+                    margin-top: 30px; 
+                }
+
+                .content span {
+                    margin: 10px 0;
+                }
+
+                .content p {
+                    font-size: 16px;
+                }
+
+            .links li {
+                display: inline-block; 
+                margin-right: 10px; 
+            }
+
+                .links li a {
+                    font-size: 14px;
+                }
+
+            .links {
+                margin: 10px 0; 
+                text-align: center; 
+            }
+        }
+
+        .links li {
+            padding: 6px 10px;
+        }
+
+        .icons li i {
+            font-size: 15px;
+        }
+
+
+        @media(max-width: 900px) {
+            .image img {
+                margin: 20px auto;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .credit {
+            text-align: center;
+            color: #000;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+            .credit a {
+                text-decoration: none;
+                color: #000;
+                font-weight: bold;
+            }
+    </style>
+
+    <style>
+        
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Papyrus, sans-serif;
+        }
+
+        form {
+            background-color: #5daeb6;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+     
+        @media screen and (min-width: 1200px) {
+
+            body {
+                font-size: 18px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: Papyrus, sans-serif;
+            }
+            form {
+                background-color: #5daeb6;
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            form {
+                max-width: 1400px;
+                padding: 50px;
+            
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            label {
+                font-size: 24px;
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #110ab0;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        @media only screen and (max-width: 600px) {
+            form {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            input[type="text"],
+            textarea {
+                padding: 10px;
+            }
+        }
+
+
+       
+        button[type="submit"] {
+            background-color: rgba(8, 9, 7787, 0.45669);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+        }
+
+            button[type="submit"]:hover {
+                background-color: #2820dd;
+            }
+
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+            .logo a {
+                margin-right: 10px;
+            }
+
+    
+        @media only screen and (max-width: 600px) {
+            button[type="submit"] {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+
+            .logo {
+                justify-content: center;
+            }
+
+                .logo a {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+        }
+
+        
+        .phone-icon {
+            background-image: url(https://cdn-icons-png.flaticon.com/512/74/74877.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .facebook-icon {
+            background-image: url(https://cdn-icons-png.flaticon.com/512/1384/1384053.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .instagram-icon {
+            background-image: url(https://cdn-icons-png.flaticon.com/512/1384/1384063.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+       
+        @media only screen and (max-width: 600px) {
+            .phone-icon, .facebook-icon, .instagram-icon {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    
+        @media screen and (max-width: 576px) {
+
+            form {
+                padding: 0 20px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            textarea {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+            }
+        }
+
+        form label {
+            font-weight: bold;
+        }
+    </style>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <form id="contact-form">
+
+        <br />
+        <h1 style="color:darkblue; position:center;"> ליצירת קשר </h1>
+        <label for="full-name">:שם מלא</label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <label for="phone-number">:מספר טלפון</label>
+        <input type="text" id="phone-number" name="phone-number" required>
+
+        <label for="appeal-cause">:סיבת הפנייה</label>
+        <textarea id="appeal-cause" name="appeal-cause" rows="4" required></textarea>
+
+        <button type="submit" onclick="ga('send', 'event', 'button', 'click', 'send-message');">שלח הודעה</button>
+        <br />
+        <br />
+
+
+        <a href="https://www.facebook.com/people/%D7%9E%D7%A8%D7%A4%D7%90%D7%AA-%D7%A9%D7%99%D7%A0%D7%99%D7%99%D7%9D-%D7%93%D7%95%D7%A7%D7%98%D7%95%D7%A8-%D7%A8%D7%A4%D7%95%D7%A4%D7%95%D7%A8%D7%98-%D7%90%D7%9C%D7%9B%D7%A1-054-4278007/100040402766156/?locale=he_IL"><img src="facebookLogo.png" alt="Facebook logo" width="52" height="52"></a>
+        <br />
+        <a href="whatsapp://send?phone=972544278007&text=היי%2C%20הגעתי%20מהאתר"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/800px-WhatsApp_logo-color-vertical.svg.png" alt="Whatsapp logo" width="52" height="52"></a>
+        <div>
+            <a href="tel:054-4278007"><img src="PhoneCall.png" alt="phone icon" width="52" height="52"></a>
+            <h1><strong>054-4278007</strong></h1>
+        </div>
+    </form>
+    <br />
+    <br />
+    <br />
+
+    <button onclick="window.location.href='index.html';" style="background-color: cyan; position: fixed; top: 10px; right: 10px; border: none; color: #000000; padding: 10px; border-radius: 50px; cursor: pointer;">בחזרה אל התפריט הראשי</button>
+
+    <script>
+        $(function () {
+            $('#contact-form').submit(function (event) {
+                event.preventDefault();
+                var fullName = $('#full-name').val();
+                var phoneNumber = $('#phone-number').val();
+                var appealCause = $('#appeal-cause').val();
+                var message = 'שם מלא: ' + fullName + '\nמספר טלפון: ' + phoneNumber + '\nסיבת הפנייה: ' + appealCause;
+                var whatsappLink = 'https://api.whatsapp.com/send?phone=972544278007&text=' + encodeURIComponent(message);
+                window.open(whatsappLink, '_blank');
+
+            });
+        });
+    </script>
+
+</body>
+</html>

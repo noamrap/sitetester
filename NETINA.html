@@ -1,0 +1,382 @@
+﻿<!--<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+
+<body>-->
+    <style >
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        /* add this class to your container element */
+        .container {
+            display: inline-block;
+        }
+
+        .gallery img {
+            width: 20%;
+            height: auto;
+            margin: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .gallery img:hover {
+                transform: scale(1.2);
+            }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 2rem;
+        }
+
+        /* Media queries for different screen sizes */
+        @media screen and (max-width: 1200px) {
+            .gallery img {
+                width: 25%;
+                margin: 1.5rem;
+            }
+
+            .column {
+                flex: 50%;
+                padding: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .gallery img {
+                width: 33.33%;
+                margin: 1.5rem;
+            }
+
+            .column {
+                flex: 100%;
+                padding: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .gallery img {
+                width: 50%;
+                margin: 2rem 0;
+            }
+
+            .column {
+                padding: 0;
+            }
+        }
+
+        /* Use em units for font sizes */
+        body {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 1em 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 1em 0;
+        }
+
+        p {
+            font-size: 1em;
+            margin: 1em 0;
+        }
+
+    </style>
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1588421357574-87938a86fa28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80");
+            background-size: cover;
+        }
+    </style>
+    <!--<div class="gallery">
+        <div class="row">
+            <div class="column">
+                <img src="מריאן.png">
+                <img src="87ניצול.png">
+                <img src="chicky.png">
+            </div>
+            <div class="column">
+                <img src="לוחם.png">
+                <img src="קשהלצאתמהבית.png">
+                <img src="פנייה.png">
+            </div>
+            <div class="column">
+                <img src="../Images/celebs/עמנואל.png">
+                <img src="ציון.png">
+                <img src="כרמלה.png">
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="זוהר.png">
+                    <img src="שיקום-שמואל.png">
+                    <img src="גיי.png">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="אחתהביאה.png">
+                    <img src="בן13.png">
+                    <img src="אבאפגום.png">
+                </div>
+            </div>
+
+            <div class="row" >
+                <div class="column">
+                    <img src="דוד.png" >
+                    <img src="דתייהשורדשואה.png">
+                    <img src="זהלאפוטושופ.png">
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="video-container">
+                    <div class="overlay"></div>
+                    <video width="420" height="470" controls>
+                        <source src="אבאאא.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button"></div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>טיפולי שיניים בהתנדבות כתרומה לקהילה</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- HTML -->
+    <div class="container">
+        <div class="heading">
+            <h3>טיפולי שיניים בהתנדבות <span>כתרומה לקהילה </span></h3>
+        </div>
+        <div class="box">
+            <div class="dream">
+                <img src="מריאן.png" onclick="openFullscreenImage(this);">
+                <img src="87ניצול.png" onclick="openFullscreenImage(this);">
+                <img src="chicky.png" onclick="openFullscreenImage(this);">
+            </div>
+            <div class="dream">
+                <img src="לוחם.png" onclick="openFullscreenImage(this);">
+                <img src="קשהלצאתמהבית.png" onclick="openFullscreenImage(this);">
+                <img src="פנייה.png" onclick="openFullscreenImage(this);">
+            </div>
+
+            <div class="dream">
+                <img src="עמנואל.png" onclick="openFullscreenImage(this);">
+                <img src="ציון.png" onclick="openFullscreenImage(this);">
+                <img src="כרמלה.png" onclick="openFullscreenImage(this);">
+            </div>
+
+            <div class="dream">
+                <img src="זוהר.png" onclick="openFullscreenImage(this);">
+                <img src="שיקום-שמואל.png" onclick="openFullscreenImage(this);">
+                <img src="גיי.png" onclick="openFullscreenImage(this);">
+            </div>
+
+            <div class="dream">
+                <img src="אחתהביאה.png" onclick="openFullscreenImage(this);">
+                <img src="בן13.png" onclick="openFullscreenImage(this);">
+                <img src="אבאפגום.png" onclick="openFullscreenImage(this);">
+            </div>
+
+            <div class="dream">
+                <img src="דוד.png" onclick="openFullscreenImage(this);">
+                <img src="דתייהשורדשואה.png" onclick="openFullscreenImage(this);">
+                <img src="זהלאפוטושופ.png" onclick="openFullscreenImage(this);">
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="video-container">
+            <div class="overlay"></div>
+            <video width="420" height="470" controls>
+                <source src="אבאאא.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="play-button"></div>
+        </div>
+    </div>
+
+    <div id="fullscreenImageContainer" onclick="closeFullscreenImage()">
+        <img id="fullscreenImage">
+        <button id="fullscreenImageReturnButton">חזור אל כל התמונות</button>
+    </div>
+
+
+    <button onclick="window.location.href='index.html';" style="background-color: cyan; position: fixed; top: 10px; right: 10px; border: none; color: #000000; padding: 10px; border-radius: 50px; cursor: pointer;">בחזרה אל התפריט הראשי</button>
+    <!-- CSS -->
+    <style>
+        #fullscreenImageContainer {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            z-index: 9999;
+        }
+
+        #fullscreenImage {
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        #fullscreenImageReturnButton {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        function openFullscreenImage(img) {
+            var fullscreenImageContainer = document.getElementById("fullscreenImageContainer");
+            var fullscreenImage = document.getElementById("fullscreenImage");
+            fullscreenImage.src = img.src;
+            fullscreenImageContainer.style.display = "block";
+            fullscreenImageContainer.addEventListener("click", closeFullscreenImage);
+        }
+
+        function closeFullscreenImage() {
+            var fullscreenImageContainer = document.getElementById("fullscreenImageContainer");
+            fullscreenImageContainer.style.display = "none";
+            fullscreenImageContainer.removeEventListener("click", closeFullscreenImage);
+        }
+    </script>
+
+</body>
+</html >
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+                * {
+                    margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+        }
+
+                .container {
+                    display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 40px 20px 0 20px;
+        }
+
+                .container .heading {
+                    width: 50%;
+                padding-bottom: 50px;
+            }
+
+                .container .heading h3 {
+                    font-size: 3em;
+                font-weight: bolder;
+                padding-bottom: 10px;
+                border-bottom: 3px solid #222;
+                }
+
+                .container .heading h3 span {
+                    font-weight: 100;
+                    }
+
+                .container .box {
+                    display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+                .container .box .dream {
+                    display: flex;
+                flex-direction: column;
+                width: 32.5%;
+                }
+
+                .container .box .dream img {
+                    width: 100%;
+                padding-bottom: 15px;
+                border-radius: 5px;
+                    }
+
+                .container .btn {
+                    margin: 40px 0 70px 0;
+                background: #222;
+                padding: 15px 40px;
+                border-radius: 5px;
+            }
+
+                .container .btn a {
+                    color: #fff;
+                font-size: 1.2em;
+                text-decoration: none;
+                font-weight: bolder;
+                letter-spacing: 3px;
+                }
+
+                @media only screen and (max-width: 769px) {
+            .container.box {
+
+                    flex-direction: column;
+            }
+
+                .container .box .dream {
+                    width: 100%;
+                }
+        }
+
+                @media only screen and (max-width: 643px) {
+            .container.heading {
+                    width: 100%;
+            }
+
+                .container .heading h3 {
+                    font-size: 1em;
+                }
+        }
+            </style>

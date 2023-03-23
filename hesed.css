@@ -1,0 +1,92 @@
+﻿.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* add this class to your container element */
+.container {
+    display: inline-block;
+}
+    .gallery img {
+        width: 20%;
+        height: auto;
+        margin: 2rem;
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .gallery img:hover {
+            transform: scale(1.2);
+        }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 2rem;
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 1200px) {
+    .gallery img {
+        width: 25%;
+        margin: 1.5rem;
+    }
+
+    .column {
+        flex: 50%;
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery img {
+        width: 33.33%;
+        margin: 1.5rem;
+    }
+
+    .column {
+        flex: 100%;
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery img {
+        width: 50%;
+        margin: 2rem 0;
+    }
+
+    .column {
+        padding: 0;
+    }
+}
+
+/* Use em units for font sizes */
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+p {
+    font-size: 1em;
+    margin: 1em 0;
+}
